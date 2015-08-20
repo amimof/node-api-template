@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var TestSchema = new Schema({
+var KittenSchema = new Schema({
 	username: String,
 	password: String,
 	created: String,
 	updated: String
 });
 
-module.exports = mongoose.model('Test', TestSchema);
+module.exports = mongoose.model('Kitten', KittenSchema);

@@ -1,5 +1,5 @@
 var passport = require('passport');
-var User = require('../models/test');
+var User = require('../models/kitten.model');
 
 module.exports = function() {
 	passport.serializeUser(function(user, done) {

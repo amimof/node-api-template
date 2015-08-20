@@ -5,7 +5,7 @@ module.exports = {
 		url: 'mongodb://ansible:ansible@localhost:27017/ansible'
 	},
 	log: {
-		filename: 'C:\\temp\\nodejs.log',
+		filename: 'error.log',
 		level: 'debug',
 		maxsize: '10000000',
 		maxFiles: '10'
