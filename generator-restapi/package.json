@@ -1,0 +1,15 @@
+{
+  "name": "generator-restapi",
+  "version": "1.0.0",
+  "description": "A Yeoman Generator for node-api-template",
+  "files": [
+    "app",
+    "router"
+  ],
+  "author": "Amir Mofasser",
+  "license": "ISC",
+  "keywords": ["yeoman-generator"],
+  "dependencies": {
+    "yeoman-generator": "^0.20.3"
+  }
+}
