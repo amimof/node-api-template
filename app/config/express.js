@@ -1,5 +1,4 @@
 var express = require('express');
-var passport = require('passport');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 
@@ -10,11 +9,6 @@ module.exports = function() {
 	// Configure our app to use body-parser. This will let us get the data from POST requests
 	app.use(bodyParser.urlencoded({ extended: true }));
 	app.use(bodyParser.json());
-
-	// Configure passport
-	app.use(session({ secret: 'mySecretKey' }));
-	app.use(passport.initialize());
-	app.use(passport.session());
 
 	// Middleware to use for all requests
 	router.use(function(req, res, next) {

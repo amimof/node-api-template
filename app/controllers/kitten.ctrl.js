@@ -1,12 +1,6 @@
 var Kitten = require('../models/kitten.model');
 var moment = require('moment');
-var bcrypt = require('bcrypt');
-var passport = require('passport');
 var log = require('../config/log')();
-
-var createHash = function(password) {
-	return bcrypt.hashSync(password, bcrypt.genSaltSync(10), null);
-}
 
 exports.getKittenFood = function(req, res) {
 	var food = req.params.food;

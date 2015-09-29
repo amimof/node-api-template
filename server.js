@@ -2,7 +2,6 @@
 var config = require('./app/config/config'),
 	db = require('./app/config/mongoose')(),
 	app = require('./app/config/express')(),
-	passport = require('./app/config/passport')(),
 	log = require('./app/config/log')();
 
 // Start the server
