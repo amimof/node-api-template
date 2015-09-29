@@ -1,11 +1,7 @@
 // Put app config here
 
-var getPort = function() {
-	return process.env.OPENSHIFT_NODEJS_PORT || 8080;
-}
-
 module.exports = {
-	port: getPort(),
+	port: process.env.OPENSHIFT_NODEJS_PORT || 8080,
 	db: {
 		url: 'mongodb://ansible:ansible@localhost:27017/ansible'
 	},
