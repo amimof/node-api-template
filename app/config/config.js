@@ -1,6 +1,6 @@
 // Put app config here
 module.exports = {
-	port: 8082,
+	port: 8080,
 	db: {
 		url: 'mongodb://ansible:ansible@localhost:27017/ansible'
 	},
