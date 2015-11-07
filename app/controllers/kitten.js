@@ -1,4 +1,4 @@
-var Kitten = require('../models/kitten.model');
+var Kitten = require('../models/kitten');
 var moment = require('moment');
 var log = require('../config/log')();
 

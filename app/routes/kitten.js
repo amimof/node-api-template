@@ -1,4 +1,4 @@
-var kitten = require('../controllers/kitten.ctrl');
+var kitten = require('../controllers/kitten');
 
 module.exports = function(router) {
 	// Kitten
