@@ -1,6 +1,8 @@
 // Put app config here
+
 module.exports = {
-	port: 8082,
+	port: process.env.OPENSHIFT_NODEJS_PORT || 8080,
+	host: process.env.OPENSHIFT_NODEJS_IP || 'localhost',
 	db: {
 		url: 'mongodb://ansible:ansible@localhost:27017/ansible'
 	},
