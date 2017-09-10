@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A Yeoman Generator for node-api-template",
   "files": [
-    "app",
-    "router"
+    "generators"
   ],
   "author": "Amir Mofasser",
   "license": "ISC",
@@ -12,6 +11,6 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.20.3"
+    "yeoman-generator": "^1.0.0"
   }
 }

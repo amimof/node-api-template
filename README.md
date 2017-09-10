@@ -1,8 +1,13 @@
 # node-api-template
 A simple API application skeleton for Nodejs.
 
-## Generators
-This project includes a few simple Yeoman generators.
+## Installing the generators
+This project includes a few simple Yeoman generators. To install the generator run:
+```
+$ cd generator-restapi && npm link
+```
+
+### Generators
 
 #### Controller
 ```
