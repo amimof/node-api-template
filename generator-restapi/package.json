@@ -8,7 +8,9 @@
   ],
   "author": "Amir Mofasser",
   "license": "ISC",
-  "keywords": ["yeoman-generator"],
+  "keywords": [
+    "yeoman-generator"
+  ],
   "dependencies": {
     "yeoman-generator": "^0.20.3"
   }

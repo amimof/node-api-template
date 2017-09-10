@@ -2,14 +2,10 @@
 var config = require('./app/config/config'),
 	db = require('./app/config/mongoose')(),
 	app = require('./app/config/express')(),
-	log = require('./app/config/log')();
+	log = require('./app/services/logger');
 
 // Start the server
 app.listen(config.port, config.host);
-
-// Set-up logging
-log.add(log.transports.File, config.log);
-
 module.exports = app;
 
-log.info('Magic is happening on port ' + config.port);
+log.infof('Magic is happening on port %s', config.port);

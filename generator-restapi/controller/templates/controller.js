@@ -1,16 +1,16 @@
-var log = require('../config/log')();
+var log = require('../services/logger');
 
-exports.get<%= namec %> = function(req, res) {
-}
+exports.get_<%= namel %> = function(req, res) {
+};
 
-exports.get<%= namec %>s = function(req, res) {
-}
+exports.get_<%= namel %>s = function(req, res) {
+};
 
-exports.create<%= namec %> = function(req, res) {
-}
+exports.create_<%= namel %> = function(req, res) {
+};
 
-exports.delete<%= namec %>  = function(req, res) {
-}
+exports.delete_<%= namel %>  = function(req, res) {
+};
 
-exports.update<%= namec %> = function(req, res) {
-}
+exports.update_<%= namel %> = function(req, res) {
+};

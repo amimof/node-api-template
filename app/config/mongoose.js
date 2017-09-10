@@ -1,13 +1,13 @@
 var config = require('./config');
 var mongoose = require('mongoose');
-var log = require('./log')();
+var log = require('../services/logger');
 
 module.exports = function() {
-	var db = mongoose.connect(config.db.url, function(err) {
+	var db = mongoose.connect(config.db.uri, function(err) {
 		if(err) {
 			log.error(err);
 		} else {
-			log.info('Connected to mongodb at ' + config.db.url);
+			log.infof('Connected to mongodb at %s', config.db.uri);
 		}
 	});
 	return db;

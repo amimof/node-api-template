@@ -27,8 +27,9 @@ module.exports = function() {
 		next();
 	});
 
-	// Import routes here, define them in 'routes' folder
-	require('../routes/kitten')(router);
+	// Import routes here, define them in the 'routes' folder.
+	// For example:
+	//require('../routes/kitten')(router);
 
 	// Register our routes
 	app.use('/api', router);
