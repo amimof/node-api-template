@@ -5,6 +5,7 @@ var path = require('path');
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
+    this.argument('service_name', { type: String, required: true });
     this.argument('model_name', { type: String, required: true });
     this.option('root', { type: String, default: 'app/common/' });
     let root = this.config.get('root');
@@ -18,9 +19,12 @@ module.exports = class extends Generator {
   }
   writing() {
     this.fs.copyTpl(
-      this.templatePath('model.js'),
-      this.destinationPath(path.join(this.config.get('root'), 'models', _.lowerCase(this.options.model_name)+'.js')),
-      { name: this.options.model_name, namec: _.capitalize(this.options.model_name), namel: _.lowerCase(this.options.model_name) }
+      this.templatePath('service.js'),
+      this.destinationPath(path.join(this.config.get('root'), 'services', _.lowerCase(this.options.service_name)+'.js')),
+      {
+        name: this.options.service_name, namec: _.capitalize(this.options.service_name), namel: _.lowerCase(this.options.service_name),
+        model_name: this.options.model_name, model_namec: _.capitalize(this.options.model_name), model_namel: _.lowerCase(this.options.model_name)
+      }
     );
   }
 };

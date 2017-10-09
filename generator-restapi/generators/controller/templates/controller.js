@@ -1,4 +1,4 @@
-var log = require('../services/logger');
+var log = require('../services/log');
 
 exports.get_<%= namel %> = function(req, res) {
 };
